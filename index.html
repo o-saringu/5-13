@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>map()関数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "5-13.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+<div class="code">
+	<p>　　	void setup(){
+	<p>　　	　size(240, 120);　　
+	<p>　　	　strokeWeight(12);
+	<p>　　	}
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　background(204);
+	<p>　　	　　if(keyCode==LEFT){
+	<p>　　	　　stroke(102);
+	<p>　　	　　line(mouseX, 0, mouseX, height);
+	<p>　　	　　stroke(0);
+	<p>　　	　
+	<p>　　	　　float mx=map(mouseX, 0, width, 60, 180);
+	<p>　　	　　line(mx, 0, mx, height);
+	<p>　　	}
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　map()関数は、最小値と最大値を変換させる役割がある。
+	<p>　map(a, b, c, d, e)
+	<p>　　aを、範囲b~cから別の範囲d~eへと変換させる。
+	<p>　　b~cの範囲をd~eの範囲に適応させる。
+	<p>
+	<p>　例で説明をすると、例では2本の線がある。　
+	<p>　1本目の線はカーソルに合わせて移動する。
+	<p>　2本目の線は、map関数を用いて最小値、最大値を変換しているため、カーソルがx座標0の時に、x座標60と変換される。
+	<p>　また、カーソルが一番右端の時は、変換されているため180座標になる。
+
+</div>
+</body>
